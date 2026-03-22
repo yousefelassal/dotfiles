@@ -3,10 +3,6 @@ auto-update-channel = tip
 # font
 font-feature = liga
 font-size = 14
-font-thicken = true
-
-# shell integrations
-shell-integration-features = no-cursor
 
 # cursor
 cursor-style-blink = true
