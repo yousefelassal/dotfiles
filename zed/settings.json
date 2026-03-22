@@ -1,0 +1,178 @@
+{
+  "ensure_final_newline_on_save": false,
+  "format_on_save": "off",
+  "edit_predictions": {
+    "provider": "copilot",
+  },
+  "icon_theme": "VSCode Icons for Zed (Dark NestJS)",
+  "agent": {
+    "default_profile": "write",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini",
+      "enable_thinking": false,
+    },
+    "commit_message_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini",
+    },
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "disable_ai": false,
+  "confirm_quit": false,
+  "base_keymap": "VSCode",
+  "max_tabs": 8,
+  "search": {
+    "button": false,
+  },
+  "toolbar": {
+    "quick_actions": false,
+  },
+  "git_panel": {
+    "tree_view": false,
+    "dock": "right",
+    "collapse_untracked_diff": false,
+    "fallback_branch_name": "master",
+    "button": true,
+  },
+  "notification_panel": {
+    "dock": "right",
+  },
+  "outline_panel": {
+    "indent_size": 35,
+    "button": false,
+  },
+  "project_panel": {
+    "default_width": 350,
+    "hide_root": true,
+    "auto_fold_dirs": false,
+    "dock": "right",
+    "starts_open": false,
+    "sticky_scroll": false,
+    "indent_guides": {
+      "show": "never",
+    },
+  },
+  "gutter": {
+    "min_line_number_digits": 0,
+    "folds": false,
+    "runnables": false,
+  },
+  "tabs": {
+    "git_status": true,
+    "file_icons": true,
+    "show_diagnostics": "errors",
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "inlay_hints": {
+    "enabled": true,
+  },
+  "centered_layout": {
+    "left_padding": 0.15,
+    "right_padding": 0.15,
+  },
+  "collaboration_panel": {
+    "button": false,
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": true,
+      "delay_ms": 300,
+      "min_column": 80,
+    },
+  },
+  "vim": {
+    "use_system_clipboard": "always",
+  },
+  "cursor_blink": false,
+  "ui_font_size": 14,
+  "buffer_font_size": 13,
+  "buffer_line_height": {
+    "custom": 1.6,
+  },
+  "theme": {
+    "mode": "system",
+    "light": "GitHub Light",
+    "dark": "GitHub Dark",
+  },
+  "terminal": {
+    "line_height": {
+      "custom": 1.6,
+    },
+    "dock": "bottom",
+    "blinking": "on",
+    "copy_on_select": true,
+    "default_height": 500,
+    "env": {
+      "EDITOR": "zed --wait",
+    },
+    "detect_venv": {
+      "on": {
+        "directories": [".venv", "venv"],
+        "activate_script": "default",
+      },
+    },
+  },
+  "auto_install_extensions": {
+    "html": true,
+    "elixir": true,
+    "toml": true,
+    "cspell": true,
+    "dockerfile": true,
+  },
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/out",
+    "**/dist",
+    "**/.husky",
+    "**/.turbo",
+    "**/.vscode-test",
+    "**/.vscode",
+    "**/.next",
+    "**/.storybook",
+    "**/.tap",
+    "**/.nyc_output",
+    "**/report",
+    "**/node_modules",
+  ],
+  "remove_trailing_whitespace_on_save": false,
+  "always_treat_brackets_as_autoclosed": true,
+  "lsp": {
+    "tailwindcss-language-server": {
+      "settings": {
+        "includeLanguages": {
+          "phoenix-heex": "html",
+        },
+        "experimental": {
+          "classRegex": [
+            "class=\"([^\"]*)\"",
+            "class='([^']*)'",
+            "\\.className\\s*[+]?=\\s*['\"]([^'\"]*)['\"]",
+            "\\.setAttributeNS\\(.*,\\s*['\"]class['\"],\\s*['\"]([^'\"]*)['\"]",
+            "\\.setAttribute\\(['\"]class['\"],\\s*['\"]([^'\"]*)['\"]",
+            "\\.classList\\.add\\(['\"]([^'\"]*)['\"]",
+            "\\.classList\\.remove\\(['\"]([^'\"]*)['\"]",
+            "\\.classList\\.toggle\\(['\"]([^'\"]*)['\"]",
+            "\\.classList\\.contains\\(['\"]([^'\"]*)['\"]",
+            "\\.classList\\.replace\\(\\s*['\"]([^'\"]*)['\"]",
+            "\\.classList\\.replace\\([^,)]+,\\s*['\"]([^'\"]*)['\"]",
+          ],
+        },
+      },
+    },
+  },
+}
