@@ -1,0 +1,53 @@
+auto-update-channel = tip
+
+# font
+font-feature = liga
+font-size = 14
+font-thicken = true
+
+# shell integrations
+shell-integration-features = no-cursor
+
+# cursor
+cursor-style-blink = true
+
+# mouse
+mouse-hide-while-typing = true
+
+# theme
+theme = light:"GitHub",dark:"GitHub Dark"
+
+# window
+window-colorspace = display-p3
+window-width = 101
+window-height = 28
+window-padding-x = 11
+window-padding-y = 11
+
+# macOS-specific settings
+macos-icon = xray
+macos-titlebar-style = hidden
+macos-titlebar-proxy-icon = hidden
+macos-window-shadow = true
+
+# quick terminal
+quick-terminal-animation-duration = 0
+quick-terminal-autohide = true
+
+# misc.
+alpha-blending = native
+
+# keybinds
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:bottom
+keybind = ctrl+k=goto_split:top
+keybind = ctrl+l=goto_split:right
+
+keybind = global:opt+'=toggle_quick_terminal
+
+keybind = ctrl+n>h=new_split:left
+keybind = ctrl+n>j=new_split:down
+keybind = ctrl+n>k=new_split:up
+keybind = ctrl+n>l=new_split:right
+
+keybind = super+r=reload_config
