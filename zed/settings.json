@@ -1,4 +1,15 @@
 {
+  "agent_servers": {
+    "cursor": {
+      "favorite_config_option_values": {
+        "model": ["composer-2[fast=true]"],
+      },
+      "type": "registry",
+    },
+    "github-copilot-cli": {
+      "type": "registry",
+    },
+  },
   "ensure_final_newline_on_save": false,
   "format_on_save": "off",
   "edit_predictions": {
@@ -6,7 +17,7 @@
   },
   "icon_theme": "VSCode Icons for Zed (Dark NestJS)",
   "agent": {
-    "default_profile": "write",
+    "default_profile": "ask",
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-5-mini",
@@ -52,7 +63,7 @@
     "auto_fold_dirs": false,
     "dock": "right",
     "starts_open": false,
-    "sticky_scroll": false,
+    "sticky_scroll": true,
     "indent_guides": {
       "show": "never",
     },
@@ -67,11 +78,16 @@
     "file_icons": true,
     "show_diagnostics": "errors",
   },
+  "sticky_scroll": {
+    "enabled": true,
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
   },
   "inlay_hints": {
+    "show_type_hints": false,
+    "show_parameter_hints": false,
     "enabled": true,
   },
   "centered_layout": {
@@ -152,6 +168,21 @@
   "remove_trailing_whitespace_on_save": false,
   "always_treat_brackets_as_autoclosed": true,
   "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
     "tailwindcss-language-server": {
       "settings": {
         "includeLanguages": {
