@@ -77,6 +77,11 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+# Docker Desktop CLI completions (must precede oh-my-zsh's compinit)
+fpath=(/Users/yousefelassal/.docker/completions $fpath)
+
+zstyle ':omz:plugins:nvm' lazy yes
+
 plugins=(
   git
   zsh-autosuggestions
@@ -93,6 +98,14 @@ plugins=(
   kubectl
   macos
   bun
+  gh
+  docker-compose
+  sudo
+  copypath
+  copyfile
+  copybuffer
+  extract
+  dotenv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -152,18 +165,10 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-# The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/yousefelassal/.docker/completions $fpath)
-autoload -Uz compinit
-compinit
-# End of Docker CLI completions
 eval "$(zoxide init zsh)"
 
-# k8s autocompletion
-source <(kubectl completion zsh)
-
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+command -v ng &>/dev/null && source <(ng completion script)
 
 # opencode
 export PATH=/Users/yousefelassal/.opencode/bin:$PATH
